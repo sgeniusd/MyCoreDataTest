@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30149DEA17969E580093A34B /* KPStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 30149DE717969E580093A34B /* KPStore.m */; };
+		30149DEB17969E580093A34B /* NSManagedObject+ActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 30149DE917969E580093A34B /* NSManagedObject+ActiveRecord.m */; };
+		30149DED17969EAE0093A34B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30149DEC17969EAE0093A34B /* CoreData.framework */; };
+		30149DF01796A4380093A34B /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30149DEE1796A4380093A34B /* TestModel.xcdatamodeld */; };
 		30C0F6A2179694F100508046 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C0F6A1179694F100508046 /* UIKit.framework */; };
 		30C0F6A4179694F100508046 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C0F6A3179694F100508046 /* Foundation.framework */; };
 		30C0F6A6179694F100508046 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30C0F6A5179694F100508046 /* CoreGraphics.framework */; };
@@ -21,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30149DE617969E580093A34B /* KPStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStore.h; sourceTree = "<group>"; };
+		30149DE717969E580093A34B /* KPStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStore.m; sourceTree = "<group>"; };
+		30149DE817969E580093A34B /* NSManagedObject+ActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+ActiveRecord.h"; sourceTree = "<group>"; };
+		30149DE917969E580093A34B /* NSManagedObject+ActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+ActiveRecord.m"; sourceTree = "<group>"; };
+		30149DEC17969EAE0093A34B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		30149DEF1796A4380093A34B /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
 		30C0F69E179694F100508046 /* MyCoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C0F6A1179694F100508046 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		30C0F6A3179694F100508046 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -44,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30149DED17969EAE0093A34B /* CoreData.framework in Frameworks */,
 				30C0F6A2179694F100508046 /* UIKit.framework in Frameworks */,
 				30C0F6A4179694F100508046 /* Foundation.framework in Frameworks */,
 				30C0F6A6179694F100508046 /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +64,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30149DE517969E580093A34B /* KPStore */ = {
+			isa = PBXGroup;
+			children = (
+				30149DE617969E580093A34B /* KPStore.h */,
+				30149DE717969E580093A34B /* KPStore.m */,
+				30149DE817969E580093A34B /* NSManagedObject+ActiveRecord.h */,
+				30149DE917969E580093A34B /* NSManagedObject+ActiveRecord.m */,
+			);
+			path = KPStore;
+			sourceTree = "<group>";
+		};
 		30C0F695179694F100508046 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +95,7 @@
 		30C0F6A0179694F100508046 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30149DEC17969EAE0093A34B /* CoreData.framework */,
 				30C0F6A1179694F100508046 /* UIKit.framework */,
 				30C0F6A3179694F100508046 /* Foundation.framework */,
 				30C0F6A5179694F100508046 /* CoreGraphics.framework */,
@@ -88,6 +111,7 @@
 				30C0F6B9179694F200508046 /* ViewController.h */,
 				30C0F6BA179694F200508046 /* ViewController.m */,
 				30C0F6BC179694F200508046 /* ViewController.xib */,
+				30149DE517969E580093A34B /* KPStore */,
 				30C0F6A8179694F200508046 /* Supporting Files */,
 			);
 			path = MyCoreDataTest;
@@ -96,6 +120,7 @@
 		30C0F6A8179694F200508046 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				30149DEE1796A4380093A34B /* TestModel.xcdatamodeld */,
 				30C0F6A9179694F200508046 /* MyCoreDataTest-Info.plist */,
 				30C0F6AA179694F200508046 /* InfoPlist.strings */,
 				30C0F6AD179694F200508046 /* main.m */,
@@ -173,8 +198,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30149DEA17969E580093A34B /* KPStore.m in Sources */,
 				30C0F6AE179694F200508046 /* main.m in Sources */,
 				30C0F6B2179694F200508046 /* AppDelegate.m in Sources */,
+				30149DF01796A4380093A34B /* TestModel.xcdatamodeld in Sources */,
+				30149DEB17969E580093A34B /* NSManagedObject+ActiveRecord.m in Sources */,
 				30C0F6BB179694F200508046 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,8 +324,22 @@
 				30C0F6C3179694F200508046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30149DEE1796A4380093A34B /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30149DEF1796A4380093A34B /* TestModel.xcdatamodel */,
+			);
+			currentVersion = 30149DEF1796A4380093A34B /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30C0F696179694F100508046 /* Project object */;
 }
